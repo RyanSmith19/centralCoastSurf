@@ -7,21 +7,28 @@
   .services-list {
     list-style: none;
     padding: 0;
+    text-align: left;
   }
   
   .services-list li {
     margin: 5px 0;
   }
   
-  .services a {
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    background-color: var(--button-color);
     color: var(--button-text-color);
-    background-color: var(--button-bg-color);
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
   }
   
-  .services a:hover {
+  .cta-button:hover {
     background-color: var(--link-hover-color);
   }
   

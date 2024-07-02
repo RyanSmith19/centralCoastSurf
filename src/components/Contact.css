@@ -16,3 +16,12 @@
     margin: 5px 0;
   }
   
+  .social-media a {
+    margin: 0 10px;
+    color: var(--primary-text-color);
+  }
+  
+  .social-media a:hover {
+    color: var(--link-hover-color);
+  }
+  
