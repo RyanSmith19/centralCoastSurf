@@ -1,0 +1,22 @@
+/* src/components/Booking.css */
+.booking {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .fareharbor-booking-widget {
+    margin-top: 20px;
+  }
+  
+  .fh-button {
+    text-decoration: none;
+    color: var(--button-text-color);
+    background-color: var(--button-bg-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .fh-button:hover {
+    background-color: var(--link-hover-color);
+  }
+  
