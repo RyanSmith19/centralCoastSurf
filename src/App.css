@@ -1,18 +1,107 @@
 /* src/App.css */
 :root {
-  --primary-bg-color: rgba(51, 51, 51, 1);   /* Dark background color */
-  --primary-text-color: rgba(255, 255, 255, 1); /* White text color */
-  --link-hover-color: rgba(0, 191, 255, 0.9);
-  --button-color: rgba(135, 206, 250, 1.0); 
+  --primary-bg-color: rgba(44, 62, 80, 1);   /* Dark background color */
+  --primary-text-color: rgba(44, 62, 80, 1); /* Dark text color */
+  --secondary-text-color: rgba(236, 240, 241, 1); /* Light text color */
+  --link-hover-color: rgba(52, 152, 219, 1);  /* Link hover color */
+  --button-color: rgba(26, 188, 156, 1);      /* Button color */
   --button-text-color: rgba(255, 255, 255, 1); /* White button text */
+  --button-border-color: rgba(255, 255, 255, 1); /* Button border color */
+  --section-bg-color: rgba(236, 240, 241, 1);  /* Section background color */
+  --footer-bg-color: rgba(52, 73, 94, 1);      /* Footer background color */
+  --footer-text-color: rgba(236, 240, 241, 1); /* Footer text color */
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }
 
 .App {
   text-align: center;
 }
 
+.logo {
+  width: 150px;
+  margin: 20px 0;  /* Added margin to the logo */
+}
+
 .section {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  background: var(--section-bg-color);
+  margin: 40px auto;  /* Added margin to the sections */
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.home {
+  background: var(--primary-bg-color) no-repeat center center/cover;
+  color: var(--secondary-text-color);
+  padding: 100px 20px;
+  border-radius: 8px;
+  margin: 40px auto;  /* Added margin to the home section */
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  padding: 12px 24px;
+  border: 2px solid var(--button-border-color); /* Added border to buttons */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--link-hover-color);
+  transform: scale(1.05);
+}
+
+.services {
+  background: var(--section-bg-color);
+  text-align: left;
+  border-radius: 8px;
+}
+
+.services h2 {
+  text-align: center;
+  color: var(--primary-bg-color);
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.services-list li {
+  margin: 20px 0;
+}
+
+.services-list ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.contact {
+  background: var(--section-bg-color);
+  border-radius: 8px;
+}
+
+.contact h2 {
+  color: var(--primary-bg-color);
 }
 
 .contact-details {
@@ -24,6 +113,18 @@
 
 .contact-details a {
   text-decoration: none;
-  color: inherit;
+  color: var(--primary-bg-color);
   margin: 5px 0;
+}
+
+.footer {
+  background: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(221, 221, 221, 1);
+}
+
+.footer p {
+  margin: 0;
 }
